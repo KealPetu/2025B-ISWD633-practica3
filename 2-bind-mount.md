@@ -21,17 +21,32 @@ docker run -d --name <nombre contenedor> --mount type=bind,source=<ruta carpeta 
 ### ¿Qué sucede al ingresar al servidor de nginx?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
 
+![resultado de ejecucion del contenedor](image.png)
+Nos da como resultado un error, no existe un archivo html el que leer.
+
 ### ¿Qué pasa con el archivo index.html del contenedor?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+![resultado](image-1.png)
+
+No es creado, en los logs nos muestra que el contenedor no tiene indexado esta direccion.
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de tu computador en la carpeta html
 ### ¿Qué sucede al ingresar al servidor de nginx?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
 
+![muestreo](image-4.png)
+
+Ahora se muestra que el servidor esta utilizando el otro index.html.
+
 ### Eliminar el contenedor
 # COMPLETAR CON EL COMANDO
+
+![contenedor eliminado](image-3.png)
 
 ### ¿Qué sucede al crear nuevamente un contenedor montado al directorio definidos anteriormente?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
 
+![resultado](image-2.png)
 
+Ahora el contenedor lee los archivos como si fueran suyos propios, en lugar de intentar crear uno nuevo.
