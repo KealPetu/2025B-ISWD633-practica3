@@ -10,6 +10,8 @@ docker volume create <nombre volumen>
 ### Crear el volumen nombrado: vol-postgres
 # COMPLETAR CON EL COMANDO
 
+![creacion de volumen](image-9.png)
+
 ## MOUNTPOINT
 Un mountpoint se refiere al lugar en el sistema de archivos donde un dispositivo de almacenamiento se une (o monta) al sistema de archivos. Es el punto donde los archivos y directorios almacenados en ese dispositivo de almacenamiento son accesibles para el sistema operativo y las aplicaciones.
 
@@ -40,6 +42,8 @@ docker run -d --name <nombre contenedor> --mount type=volume,src=<nombre >,dst=<
 
 ### Crear la red net-drupal de tipo bridge
 # COMPLETAR CON EL COMANDO
+
+![creacion de la red](image-10.png)
 
 ### Crear un servidor postgres vinculado a la red net-drupal, completar la ruta del contenedor
 ```
