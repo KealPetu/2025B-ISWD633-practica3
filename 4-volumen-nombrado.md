@@ -66,12 +66,17 @@ docker run -d --name client-postgres --publish published=9500,target=80 -e PGADM
 docker run -d --name server-drupal --publish published=9700,target=80 -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> --network net-drupal drupal
 ```
 
+![instalacion de drupal con volumenes](image-11.png)
+![creacion del contenedor con volumenes](image-12.png)
+
 ### Ingrese al server-drupal y siga el paso a paso para la instalación.
 # COMPLETAR CON UNA CAPTURA DE PANTALLA DEL PASO 4
 
 _La instalación puede tomar varios minutos, mientras espera realice un diagrama de los contenedores que ha creado en este apartado._
 
 # COMPLETAR CON EL DIAGRAMA SOLICITADO
+
+![diagrama de contenedores](diagrama-de-contenedores.svg)
 
 ### Eliminar un volumen específico
 ```
@@ -80,3 +85,5 @@ docker volume rm <nombre volumen>
 **Considerar**
 Datos Persistentes: Asegúrate de que el volumen no contiene datos críticos antes de eliminarlo, ya que esta operación no se puede deshacer.
 Contenedores Activos: No puedes eliminar un volumen que está actualmente en uso por un contenedor activo. Debes detener y/o eliminar el contenedor primero.
+
+![eliminacion de volumen](image-14.png)
